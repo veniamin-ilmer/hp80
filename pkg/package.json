@@ -1,0 +1,12 @@
+{
+  "name": "hp80",
+  "version": "0.1.0",
+  "files": [
+    "hp80_bg.wasm",
+    "hp80.js",
+    "hp80.d.ts"
+  ],
+  "module": "hp80.js",
+  "types": "hp80.d.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,18 @@
+[package]
+name = "hp80"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "*"
+hp_classic = { path = "../hp_classic" }
+wasm-bindgen-futures = "*"
+
+[profile.release]
+lto = true
+opt-level = 's'
